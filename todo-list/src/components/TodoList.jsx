@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import TodoForm from "./TodoForm.";
 import Todo from "./Todo.";
-
+import { useEffect } from "react";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
-  const [nextTodoId, setNextTodoId] = useState(1);
+  // const [nextTodoId, setNextTodoId] = useState(1);
+
+  useEffect(() => {
+    const todoList = window.localStorage.getItem("todoList");
+    if (todoList) {
+      const parsedList = JSON.parse(todoList);
+      setTodos(parsedList);
+    }
+  }, []);
 
   const addTodo = (todo) => {
     if (!todo.title || /^\s*$/.test(todo.title)) {
@@ -13,7 +21,7 @@ function TodoList() {
     }
 
     const newTodo = {
-      id: nextTodoId,
+      id: crypto.randomUUID(),
       title: todo.title,
       description: todo.description,
       is_done: 0,
@@ -22,8 +30,10 @@ function TodoList() {
       date_of_update: null,
     };
 
-    setNextTodoId(nextTodoId + 1);
-    setTodos([...todos, newTodo]);
+    // setNextTodoId(nextTodoId + 1);
+    const updatedTodos = [...todos, newTodo];
+    window.localStorage.setItem("todoList", JSON.stringify(updatedTodos));
+    setTodos(updatedTodos);
   };
 
   const showDescription = (todoId) => {
@@ -54,11 +64,13 @@ function TodoList() {
       return todo;
     });
 
+    window.localStorage.setItem("todoList", JSON.stringify(updatedTodos));
     setTodos(updatedTodos);
   };
 
   const removeTodo = (todoId) => {
     const updatedTodos = todos.filter((todo) => todo.id !== todoId);
+    window.localStorage.setItem("todoList", JSON.stringify(updatedTodos));
     setTodos(updatedTodos);
   };
 
@@ -70,6 +82,7 @@ function TodoList() {
       return todo;
     });
 
+    window.localStorage.setItem("todoList", JSON.stringify(updatedTodos));
     setTodos(updatedTodos);
   };
 
