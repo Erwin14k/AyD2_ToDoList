@@ -2,11 +2,19 @@ import React, { useState } from "react";
 import TodoForm from "./TodoForm.";
 import Todo from "./Todo.";
 import { useEffect } from "react";
+import TodoSearch from "./TodoSearch";
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
-  // const [nextTodoId, setNextTodoId] = useState(1);
+  const [searchTerm, setSearchTerm] = useState("");
 
+
+
+  const filteredTodos = todos.filter((todo) => {
+    return todo.title.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+  
+  
   useEffect(() => {
     const todoList = window.localStorage.getItem("todoList");
     if (todoList) {
@@ -89,9 +97,10 @@ function TodoList() {
   return (
     <>
       <h1>What's the Plan for Today?</h1>
+      <TodoSearch setSearchTerm={setSearchTerm} />
       <TodoForm onSubmit={addTodo} />
       <Todo
-        todos={todos}
+        todos={filteredTodos}
         completeTodo={completeTodo}
         removeTodo={removeTodo}
         updateTodo={updateTodo}

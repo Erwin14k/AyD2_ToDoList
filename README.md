@@ -30,6 +30,23 @@ Este prompt se utilizó para encontrar una forma de almacenar la lista de tareas
 ![Alt text](Images/prompt2_3.png)
 
 ![Alt text](Images/prompt2_4.png)
+
+
+# Prompt #3 - Sergie Arizandieta
+En este prompt se abordó la necesidad de implementar una búsqueda de tareas específicas. Esta solicitud surgió ante la perspectiva de que la lista de tareas podría crecer considerablemente, lo que dificultaría la búsqueda manual de una tarea particular dentro de la lista.
+
+![Alt text](Images/prompt3_1.png)
+
+![Alt text](Images/prompt3_2.png)
+
+![Alt text](Images/prompt3_3.png)
+
+![Alt text](Images/prompt3_4.png)
+
+![Alt text](Images/prompt3_5.png)
+
+![Alt text](Images/prompt3_6.png)
+
 # Recomendación - Erwin Vásquez
 
 En el contexto del crecimiento continuo de la inteligencia artificial (IA) en nuestra sociedad, es imperativo que aquellos que utilicen esta tecnología lo hagan de manera ética y responsable. En este sentido, se recomienda encarecidamente seguir una serie de pautas con el fin de garantizar un uso adecuado de la IA y promover la transparencia en cualquier contexto.

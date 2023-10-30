@@ -44,6 +44,11 @@ h1 {
   margin-bottom: 32px;
 }
 
+.todo-formSearch{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
 .todo-input {
   padding: 14px 32px 14px 16px;
   border-radius: 4px;
@@ -53,6 +58,17 @@ h1 {
   background: transparent;
   color: #fff;
 }
+
+.todo-inputSearch {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 70%;
+  background: transparent;
+  color: #fff;
+}
+
 
 .todo-description {
   margin-top: 10px;
@@ -85,9 +101,15 @@ h1 {
   text-transform: capitalize;
 }
 
-.todo-input.edit {
-  border: 2px solid #149fff;
+
+.todo-button.delete {
+  background: linear-gradient(
+    90deg,
+    rgb(255, 145, 20) 0%,
+    rgb(255, 96, 17) 100%
+  );
 }
+
 
 .todo-button.edit {
   background: linear-gradient(
