@@ -47,6 +47,19 @@ En este prompt se abordó la necesidad de implementar una búsqueda de tareas es
 
 ![Alt text](Images/prompt3_6.png)
 
+# Prompt #4 - Kevin Martinez
+Con ayuda de estos prompts realizados a ChatGPT se logró implementar un filtro de mostrar todas las tareas, las pendientes y las completadas. De primero se le dio el contexto de que se queria realizar y luego se le brindo el codigo para que pudiera implementar este nuevo filtro.
+
+![Alt text](Images/prompt4_1.png)
+
+![Alt text](Images/prompt4_2.png)
+
+![Alt text](Images/prompt4_3.png)
+
+![Alt text](Images/prompt4_4.png)
+
+![Alt text](Images/prompt4_5.png)
+
 # Recomendación - Erwin Vásquez
 
 En el contexto del crecimiento continuo de la inteligencia artificial (IA) en nuestra sociedad, es imperativo que aquellos que utilicen esta tecnología lo hagan de manera ética y responsable. En este sentido, se recomienda encarecidamente seguir una serie de pautas con el fin de garantizar un uso adecuado de la IA y promover la transparencia en cualquier contexto.
@@ -56,3 +69,6 @@ Es importante reconocer que la Inteligencia Artificial es una gran herramienta q
 
 # Recomendación - Sergie Arizandieta
 Las IAs son herramientas que nos ayudan a agilizar el proceso de creación, optimización o remodelación en este ámbito de código. Debemos recordar que para poder hacer un uso adecuado de estas, es importante tener bases sólidas sobre lo que les pedimos ayuda, ya que en muchas ocasiones pueden proponer sus propios criterios, los cuales no son compatibles en nuestro ambiente de trabajo y pueden hacer que la tarea se vuelva mucho más difícil de llevar a cabo. Por lo cual, es importante retomar que si haremos uso de inteligencias artificiales para agilizar procesos, debemos tener claro que estas no sustituirán por completo nuestra parte de implementación que tiene que llevar parte humana, debido a que solo nosotros conocemos la totalidad del contexto y tenemos nuestra forma de trabajar.
+
+# Recomendación - Kevin Martinez
+Para sacar el máximo provecho de una IA, como una que responde preguntas (ChatGPT), en el ámbito de la programación de manera efectiva, es fundamental proporcionar un contexto claro y específico al hacer preguntas. Esto permite que la IA comprenda mejor tus necesidades y proporcione respuestas más precisas. Además, debes recordar que la IA es una herramienta de apoyo y no puede reemplazar completamente el conocimiento y la comprensión humanos. Siempre verifica y adapta las respuestas proporcionadas por la IA para garantizar su adecuación a tu contexto y necesidades específicas. La colaboración armoniosa entre la IA y la intervención humana es esencial para obtener los mejores resultados. La exploración constante de nuevas capacidades y aplicaciones de la IA en la programación nos permitirá mantener tus habilidades actualizadas y aprovechar al máximo esta tecnología en el trabajo.
