@@ -11,6 +11,9 @@
 | 201931581 | Jonathan Marcos Valiente González |
 | 201830313 | Denilson Florentín de León Aguilar |
 
+# Introducción
+Se creo una aplicación de lista de tareas pendientes en React usando Vite el cual es un proyecto apasionante que utiliza el poder de la inteligencia artificial para guiar su desarrollo. Para completar este desafío, se utilizó la funcionalidad ChatGPT para generar indicaciones y recibir consejos críticos durante el proceso de codificación y desarrollo de la aplicación. El resultado es una aplicación de gestión de tareas que combina la flexibilidad y eficiencia de React con la velocidad de desarrollo proporcionada por Vite, enriquecida por la colaboración con esta inteligencia artificial avanzada. Acontinuación se presentaran los Promts que se le fueron dados a ChatGPT conjunto a las recomendaciones al utilizar inteligencia artificila.
+
 # Prompt #1 - Erwin Vásquez
 Este prompt se utilizó para inciar con la aplicación, por lo que le pedí a ChatGpt que me diera la guía para iniciar con mi aplicación (ToDo list), y aplicar la primera funcionalidad (Crear ToDos).
 
