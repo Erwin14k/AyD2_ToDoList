@@ -53,3 +53,6 @@ En el contexto del crecimiento continuo de la inteligencia artificial (IA) en nu
 
 # Recomendación - Daniel Acabal
 Es importante reconocer que la Inteligencia Artificial es una gran herramienta que apoya al usuario en determinadas tareas, en el caso de los LLM poseen demasiada información, por ello, se recomienda proveer un contexto antes de hacer una pregunta directa, además de proveer un formato o estilo de la respuesta esperada. Esto mejora la respuesta del LLM, la cual puede ser mejorada añadiendo más contexto o detalles.
+
+# Recomendación - Sergie Arizandieta
+Las IAs son herramientas que nos ayudan a agilizar el proceso de creación, optimización o remodelación en este ámbito de código. Debemos recordar que para poder hacer un uso adecuado de estas, es importante tener bases sólidas sobre lo que les pedimos ayuda, ya que en muchas ocasiones pueden proponer sus propios criterios, los cuales no son compatibles en nuestro ambiente de trabajo y pueden hacer que la tarea se vuelva mucho más difícil de llevar a cabo. Por lo cual, es importante retomar que si haremos uso de inteligencias artificiales para agilizar procesos, debemos tener claro que estas no sustituirán por completo nuestra parte de implementación que tiene que llevar parte humana, debido a que solo nosotros conocemos la totalidad del contexto y tenemos nuestra forma de trabajar.
