@@ -60,6 +60,31 @@ Con ayuda de estos prompts realizados a ChatGPT se logró implementar un filtro 
 
 ![Alt text](Images/prompt4_5.png)
 
+# Prompt #5 - Marcos Valiente
+Se utilizó ChatGPT para implementar la función de eliminar la tarea. Por lo que en este Prompt se le proporciona el código base
+a ChatGpt como medio de un contexto, y solicitamos que nos ayude a la implementación de la función eliminar. Entonces una vez
+brindado el código chatGpt nos indica que debemos de agregar. Hacemos unos pequeños ajustes y funciona correctamente
+
+![Alt text](Images/prompt5_1.png)
+
+![Alt text](Images/prompt5_2.png)
+
+![Alt text](Images/prompt5_3.png)
+
+![Alt text](Images/prompt5_4.png)
+
+![Alt text](Images/prompt5_5.png)
+
+![Alt text](Images/prompt5_6.png)
+
+![Alt text](Images/prompt5_7.png)
+
+![Alt text](Images/prompt5_8.png)
+
+![Alt text](Images/prompt5_9.png)
+
+![Alt text](Images/prompt5_10.png)
+
 # Recomendación - Erwin Vásquez
 
 En el contexto del crecimiento continuo de la inteligencia artificial (IA) en nuestra sociedad, es imperativo que aquellos que utilicen esta tecnología lo hagan de manera ética y responsable. En este sentido, se recomienda encarecidamente seguir una serie de pautas con el fin de garantizar un uso adecuado de la IA y promover la transparencia en cualquier contexto.
@@ -72,3 +97,9 @@ Las IAs son herramientas que nos ayudan a agilizar el proceso de creación, opti
 
 # Recomendación - Kevin Martinez
 Para sacar el máximo provecho de una IA, como una que responde preguntas (ChatGPT), en el ámbito de la programación de manera efectiva, es fundamental proporcionar un contexto claro y específico al hacer preguntas. Esto permite que la IA comprenda mejor tus necesidades y proporcione respuestas más precisas. Además, debes recordar que la IA es una herramienta de apoyo y no puede reemplazar completamente el conocimiento y la comprensión humanos. Siempre verifica y adapta las respuestas proporcionadas por la IA para garantizar su adecuación a tu contexto y necesidades específicas. La colaboración armoniosa entre la IA y la intervención humana es esencial para obtener los mejores resultados. La exploración constante de nuevas capacidades y aplicaciones de la IA en la programación nos permitirá mantener tus habilidades actualizadas y aprovechar al máximo esta tecnología en el trabajo.
+
+# Recomendación - Marcos Valiente
+Las herramientas de IA, han sido mal vistas por el público. Ya que los comentarios generales son que sustituirán a las personas.
+Sin embargo, actualmente nos encontramos en la era dónde las IA, no son exactamente Inteligencia Artificiales, porque requieren
+de una cantidad de datos y ejemplos para producir resultados y no puede producir trabajos originales, sino sólo vemos
+la compilación, mezcla, parafraseo, copia del trabajo inexactas o casi exactas de otras personas, por lo que son denominadas Inteligencias Artificiales débiles, ya que no producen un trabajo original. Actualmente las herramientas IA son sino una extensión o un súper buscador de trabajos ya realizados por otras personas, por lo que es importante por ejemplo para programar, que se entienda de primero los fundamentos básicos de los temas para darse cuenta que las IAs son inexactas, sin embargo, bien empleadas y bajo contextos agilizan los trabajos y procesos de creación de tareas repetitivas, como a la hora de programar hay algunos aspectos que son repetitivos y ayudan mucho en esto. 
