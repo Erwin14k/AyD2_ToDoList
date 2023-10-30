@@ -84,6 +84,16 @@ brindado el código chatGpt nos indica que debemos de agregar. Hacemos unos pequ
 ![Alt text](Images/prompt5_9.png)
 
 ![Alt text](Images/prompt5_10.png)
+# Prompt #6 Denilson de León
+En este prompt, Denilson de León solicitó ayuda para implementar una funcionalidad de recordatorio en la aplicación. La idea era permitir a los usuarios agregar una fecha y hora de recordatorio a sus tareas para recibir notificaciones o recordatorios en un momento específico. Aquí se muestra el diálogo y los resultados del prompt:
+imágenes:
+![Alt text](Images/Prompt6_0.png)
+
+![Alt text](Images/Prompt6_1.png)
+
+![Alt text](Images/Prompt6_2.png)
+
+![Alt text](Images/Prompt6_3.png)
 
 # Recomendación - Erwin Vásquez
 
@@ -103,3 +113,8 @@ Las herramientas de IA, han sido mal vistas por el público. Ya que los comentar
 Sin embargo, actualmente nos encontramos en la era dónde las IA, no son exactamente Inteligencia Artificiales, porque requieren
 de una cantidad de datos y ejemplos para producir resultados y no puede producir trabajos originales, sino sólo vemos
 la compilación, mezcla, parafraseo, copia del trabajo inexactas o casi exactas de otras personas, por lo que son denominadas Inteligencias Artificiales débiles, ya que no producen un trabajo original. Actualmente las herramientas IA son sino una extensión o un súper buscador de trabajos ya realizados por otras personas, por lo que es importante por ejemplo para programar, que se entienda de primero los fundamentos básicos de los temas para darse cuenta que las IAs son inexactas, sin embargo, bien empleadas y bajo contextos agilizan los trabajos y procesos de creación de tareas repetitivas, como a la hora de programar hay algunos aspectos que son repetitivos y ayudan mucho en esto. 
+
+# Recomendación - Denilson de León
+En el contexto del crecimiento continuo de la inteligencia artificial (IA) en nuestra sociedad, es imperativo que aquellos que utilicen esta tecnología lo hagan de manera ética y responsable. En este sentido, se recomienda encarecidamente seguir una serie de pautas con el fin de garantizar un uso adecuado de la IA y promover la transparencia en cualquier contexto.
+
+Es importante aprender a utilizar las IA en el ámbito actual, ya que proporcionan una ayuda significativa en diversas tareas. Sin embargo, nunca debemos depender exclusivamente de las IA y, en su lugar, debemos complementar su uso con nuestro propio estudio y comprensión. Esto nos permite identificar posibles errores o código faltante que las IA pueden pasar por alto. En resumen, las IA son herramientas valiosas de apoyo, pero no deben reemplazar por completo el conocimiento y la habilidad humanos. La colaboración armoniosa entre humanos y IA es esencial para lograr los mejores resultados y mantener un alto nivel de calidad en el trabajo que realizamos.

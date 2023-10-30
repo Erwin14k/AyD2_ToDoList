@@ -8,6 +8,9 @@ function TodoForm(props) {
   const [description, setDescription] = useState(
     props.edit ? props.edit.description : ""
   );
+  const [reminder, setReminder] = useState(
+    props.edit ? props.edit.reminder : ""
+  );
 
   const inputRef = useRef(null);
 
@@ -24,17 +27,25 @@ function TodoForm(props) {
     setShowDescription(!showDescription);
   };
 
+  const handleReminderChange = (e) => {
+    e.preventDefault();
+    setReminder(e.target.value);
+  }
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     props.onSubmit({
       title: input,
       description,
+      reminder,
       isDone: false,
       showDescription: false,
     });
     setInput("");
     setDescription("");
+    setReminder("");
   };
 
   return (
@@ -78,13 +89,23 @@ function TodoForm(props) {
             <BsPlusCircleFill />
           </button>
           {showDescription && (
-            <textarea
-              placeholder="Description"
-              value={description}
-              onChange={handleDescriptionChange}
-              name="description"
-              className="todo-input todo-description"
-            />
+            <>
+              <textarea
+                placeholder="Description"
+                value={description}
+                onChange={handleDescriptionChange}
+                name="description"
+                className="todo-input todo-description"
+              />
+              <input
+                placeholder="Fecha de cumplimiento"
+                type="date"
+                value={reminder}
+                onChange={handleReminderChange}
+                name="reminder"
+                className="todo-input todo-description"
+              />
+            </>
           )}
         </>
       )}

@@ -11,7 +11,7 @@ function TodoList() {
   const [showAll, setShowAll] = useState(true);
   const [showPending, setShowPending] = useState(false);
   const [showCompleted, setShowCompleted] = useState(false);
-
+  const [showReminders, setShowReminders] = useState(false);
 
 
   const filteredTodos = todos.filter((todo) => {
@@ -43,7 +43,10 @@ function TodoList() {
       showDescription: false,
       date_of_creation: new Date(),
       date_of_update: null,
+      reminder: new Date(todo.reminder),
     };
+    
+    console.log(JSON.stringify(todo));
 
     // setNextTodoId(nextTodoId + 1);
     const updatedTodos = [...todos, newTodo];
@@ -101,28 +104,64 @@ function TodoList() {
     setTodos(updatedTodos);
   };
 
-  return (
-    <>
-      <h1>What's the Plan for Today?</h1>
-      <TodoSearch setSearchTerm={setSearchTerm} />
-      <TodoForm onSubmit={addTodo} />
-      <TodoFilter
-        showAll={showAll}
-        showPending={showPending}
-        showCompleted={showCompleted}
-        setShowAll={setShowAll}
-        setShowPending={setShowPending}
-        setShowCompleted={setShowCompleted}
-      />
-      <Todo
-        todos={filteredTodos}
-        completeTodo={completeTodo}
-        removeTodo={removeTodo}
-        updateTodo={updateTodo}
-        showDescription={showDescription}
-      />
-    </>
-  );
+  const sortByReminder = (todos) => {
+    const validReminders = todos.filter((todo) => todo.reminder instanceof Date && !isNaN(todo.reminder.getTime()));
+    console.log("todos: ", JSON.stringify(validReminders))
+    return validReminders.sort((a, b) => a.reminder.getTime() - b.reminder.getTime());
+
+    //console.log("todos: ", JSON.stringify(todos))
+    //return todos
+      //.filter((todo) => todo.reminder instanceof Date)
+      
+    //  .sort((a, b) => (a.reminder.getTime() - b.reminder.getTime()));
+  };
+  
+  if (todos) {
+    let filteredTodos = todos.filter((todo) => {
+      return (
+        (showAll ||
+          (showPending && todo.is_done === 0) ||
+          (showCompleted && todo.is_done === 1)  ||
+          (showReminders)
+        ) &&
+        todo.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    });
+
+    console.log("show reminders: " + showReminders);
+    if (showReminders) {
+      console.log("filtrado");
+      filteredTodos = sortByReminder(todos);
+    }
+
+    return (
+      <>
+        <h1>What's the Plan for Today?</h1>
+        <TodoSearch setSearchTerm={setSearchTerm} />
+        <TodoForm onSubmit={addTodo} />
+        <TodoFilter
+          showAll={showAll}
+          showPending={showPending}
+          showCompleted={showCompleted}
+          showReminders={showReminders} // Agregar esta prop
+          setShowAll={setShowAll}
+          setShowPending={setShowPending}
+          setShowCompleted={setShowCompleted}
+          setShowReminders={setShowReminders} // Agregar esta prop
+        />
+        <Todo
+          todos={filteredTodos}
+          completeTodo={completeTodo}
+          removeTodo={removeTodo}
+          updateTodo={updateTodo}
+          showDescription={showDescription}
+          showReminders={showReminders}
+          setShowReminders={setShowReminders} // Agregar esta prop
+        />
+      </>
+    );
+  }
+  
 }
 
 export default TodoList;

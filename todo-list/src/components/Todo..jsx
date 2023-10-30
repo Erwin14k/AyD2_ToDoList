@@ -13,6 +13,7 @@ const Todo = ({
   removeTodo,
   updateTodo,
   showDescription,
+  showReminders,
 }) => {
   const [edit, setEdit] = useState({
     id: null,
@@ -31,7 +32,7 @@ const Todo = ({
     return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
-  if (todos) {
+  //if (todos) {
     return todos.map((todo) => (
       <div
         className={todo.is_done === 1 ? "todo-row complete" : "todo-row"}
@@ -62,7 +63,8 @@ const Todo = ({
                 setEdit({
                   id: todo.id,
                   value: todo.title,
-                  description: todo.description
+                  description: todo.description,
+                  reminder: todo.reminder
                 })
               }
               className="edit-icon"
@@ -79,11 +81,14 @@ const Todo = ({
             : "Not updated yet"}
         </div>
         {todo.showDescription && (
-          <div className="description">Description: {todo.description}</div>
+          <>
+            <div className="description">Description: {todo.description}</div>
+            <div className="description">Recordatorio: {todo.reminder ? new Date(todo.reminder).toLocaleString(): "Not updated yet"}</div>
+          </>
         )}
       </div>
     ));
-  }
+  //}
 
   return null;
 };
