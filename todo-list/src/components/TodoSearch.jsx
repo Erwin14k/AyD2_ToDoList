@@ -20,7 +20,7 @@ function TodoSearch(props) {
   return (
     <form onSubmit={handleSearch} onReset={handleReset} className="todo-formSearch">
       <input
-        placeholder="Add a todo"
+        placeholder="Buscar..."
         name="text"
         className="todo-inputSearch"
         ref={inputRef}
